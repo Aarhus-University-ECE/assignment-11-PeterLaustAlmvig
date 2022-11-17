@@ -2,7 +2,9 @@
 
 #include<stdio.h>
 
-int sumn (int n)
-{
-    return 0;
+int sumn (int n){
+    if(n == 1){
+        return 1;
+    }
+    return (2*n-1) + sumn(n-1);
 }
