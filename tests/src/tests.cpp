@@ -14,6 +14,7 @@ extern "C"
 TEST_CASE("sumtail")
 {
     // Add the tests for excercise 3 "sumtail" function here. Use "REQUIRE()" statement to check. 
+    //Test base case
     REQUIRE(sumtail(1,0) == 1);
     REQUIRE(sumtail(3, 0) == 6);
     REQUIRE(sumtail(33, 0) == 561);
@@ -22,6 +23,7 @@ TEST_CASE("sumtail")
 TEST_CASE("sumwhile")
 {
     // Add the tests for excercise 3 "sumwhile" function here. Use "REQUIRE()" statement to check. 
+    // If it's good enough for sumtail it's good enough for sumwhile.
     REQUIRE(sumwhile(1  ) == 1);
     REQUIRE(sumwhile(3) == 6);
     REQUIRE(sumwhile(33) == 561);
