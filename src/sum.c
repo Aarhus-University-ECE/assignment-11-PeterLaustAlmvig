@@ -19,9 +19,11 @@ int sum (int n)
 int sumtail (int n, int total)
 {
     assert(n > 0);
+    //base case
     if(n == 1){
       return n + total;
     }
+    //Call from the bottom up keeping the total along the way.
     else return sumtail(n-1, total + n);
 }
 
@@ -31,6 +33,7 @@ int sumwhile (int n)
   assert(n > 0);
   int i = 1;
   int sum = 0;
+  //Add i to the sum and increment i until i = n.
   while(i <= n){
     sum += i;
     i++;
